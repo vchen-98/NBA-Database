@@ -2,4 +2,9 @@ pandas
 numpy
 seaborn
 ipykernel
+requests
+bs4
+matplotlib
+unidecode
+lxml
 -e .
