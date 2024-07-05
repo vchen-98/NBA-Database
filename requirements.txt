@@ -7,4 +7,7 @@ bs4
 matplotlib
 unidecode
 lxml
+basketball_reference_scraper
+nba_api
+html5lib
 -e .

@@ -5,7 +5,7 @@ class BasketBallReferenceLinks:
     player_per_game_stats = r"https://www.basketball-reference.com/leagues/NBA_{year}_per_game.html#per_game_stats"
     player_per_36_stats = r"https://www.basketball-reference.com/leagues/NBA_{year}_per_minute.html#per_minute_stats"
     player_per_100_stats = r"https://www.basketball-reference.com/leagues/NBA_{year}_per_poss.html#per_poss_stats"
-    player_advanced_states = r"https://www.basketball-reference.com/leagues/NBA_{year}_advanced.html#advanced_stats"
+    player_advanced_stats = r"https://www.basketball-reference.com/leagues/NBA_{year}_advanced.html#advanced_stats"
     player_play_by_play_stats = r"https://www.basketball-reference.com/leagues/NBA_{year}_play-by-play.html#pbp_stats"
     player_shooting = r"https://www.basketball-reference.com/leagues/NBA_{year}_shooting.html#shooting_stats"
     player_adjusted_shooting = r"https://www.basketball-reference.com/leagues/NBA_{year}_adj_shooting.html#adj-shooting"
