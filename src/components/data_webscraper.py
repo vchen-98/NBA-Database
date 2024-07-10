@@ -343,6 +343,7 @@ if __name__ == "__main__":
     try:
         injuries = bs_scraper.get_injury_report()
         injuries.to_csv('data/injuries/injury_report.csv', index=False)
+        print('Successfully retrieved data for injury report')
     except Exception as e:
         print('Failed to retrieve data for injury report: {e}')
 
@@ -485,6 +486,21 @@ if __name__ == "__main__":
     #         # Pause for 5 seconds between requests to avoid hitting the request limit
     #         time.sleep(5)
 
+    
+    suffix_ = bs_scraper.get_player_suffix("James Harden").split(".")[0]
+    player_game_log = bs_scraper.get_player_game_log(suffix_, "2022")
+
+    # Team Ratings
+    for year in year_range:
+        try:
+            team_ratings = bs_scraper.get_all_games_current_season(str(year))
+            team_ratings.to_csv(f'data/team_ratings/team_ratings_{year}.csv', index=False)
+            print(f"Data for Team Ratings {year} saved successfully.")
+        except Exception as e:
+            print(f"Failed to retrieve data for Team Ratings {year}: {e}")
+        
+        # Pause for 5 seconds between requests to avoid hitting the request limit
+        time.sleep(5)
 
 
     # player_adjusted_shooting_stats = bs_scraper.get_player_adjusted_shooting_stats(str(2024))

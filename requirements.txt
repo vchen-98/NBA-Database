@@ -10,4 +10,10 @@ lxml
 basketball_reference_scraper
 nba_api
 html5lib
+scipy
+streamlit
+bokeh
+databricks
+databricks_sql_connector
+sql
 -e .
