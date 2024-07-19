@@ -15,5 +15,6 @@ streamlit
 bokeh
 databricks
 databricks_sql_connector
+databricks-api
 sql
 -e .
