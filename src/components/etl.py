@@ -2,6 +2,7 @@ import requests
 from databricks import sql
 import time
 
+# https://www.databricks.com/discover/free-training/getting-started-with-azure
 
 # Function to start the cluster
 def start_cluster(cluster_id, databricks_token):
